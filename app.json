@@ -1,0 +1,72 @@
+{
+  "expo": {
+    "name": "Rotterdam Hotspots",
+    "slug": "rotterdam-hotspots",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "automatic",
+    "newArchEnabled": true,
+    "splash": {
+      "image": "./assets/splash-icon.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "ios": {
+      "supportsTablet": true,
+      "infoPlist": {
+        "NSFaceIDUsageDescription": "Gebruik Face ID of Touch ID om de hotspot-app te beveiligen.",
+        "NSPhotoLibraryUsageDescription": "Gebruik je fotobibliotheek om foto's bij hotspots lokaal op te slaan.",
+        "NSLocationWhenInUseUsageDescription": "Gebruik je locatie om restaurants in de buurt op de kaart te tonen.",
+        "NSLocationAlwaysAndWhenInUseUsageDescription": "Gebruik je locatie op de achtergrond om een notificatie te sturen als je bij een restaurant-hotspot bent.",
+        "UIBackgroundModes": [
+          "location",
+          "fetch",
+          "remote-notification"
+        ]
+      }
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#ffffff"
+      },
+      "edgeToEdgeEnabled": true,
+      "permissions": [
+        "ACCESS_COARSE_LOCATION",
+        "ACCESS_FINE_LOCATION",
+        "ACCESS_BACKGROUND_LOCATION",
+        "FOREGROUND_SERVICE",
+        "FOREGROUND_SERVICE_LOCATION",
+        "POST_NOTIFICATIONS"
+      ]
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "plugins": [
+      "expo-secure-store",
+      "expo-local-authentication",
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "Gebruik je fotobibliotheek om foto's bij hotspots lokaal op te slaan."
+        }
+      ],
+      [
+        "expo-location",
+        {
+          "isAndroidBackgroundLocationEnabled": true,
+          "isIosBackgroundLocationEnabled": true,
+          "locationAlwaysAndWhenInUsePermission": "Gebruik je locatie op de achtergrond om een notificatie te sturen als je bij een restaurant-hotspot bent."
+        }
+      ],
+      [
+        "expo-notifications",
+        {
+          "color": "#166A5B"
+        }
+      ]
+    ]
+  }
+}
