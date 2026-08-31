@@ -2,6 +2,10 @@
 
 React Native and Expo mobile app for discovering restaurant hotspots in Rotterdam. The app focuses on mobile interaction patterns such as navigation, maps, local preferences, offline fallback data, saved notes, photos, and device features like location and biometric authentication.
 
+## Demo Status
+
+This is a mobile app project that runs through Expo. For portfolio use, a short screen recording or screenshots are recommended so visitors can see the app flow without installing dependencies.
+
 ## Features
 
 - Browse restaurant hotspots in Rotterdam
